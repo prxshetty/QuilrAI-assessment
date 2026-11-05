@@ -1,0 +1,22 @@
+{
+  "name": "task4-router",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "lint": "tsc -p tsconfig.json --noEmit",
+    "start": "tsx src/index.ts",
+    "start:mock": "tsx src/mock-upstream.ts",
+    "demo": "bash demo.sh",
+    "test": "node --import tsx --test test/*.test.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "better-sqlite3": "^12.11.1"
+  }
+}
